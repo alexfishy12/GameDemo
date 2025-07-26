@@ -19,6 +19,7 @@ public class SteamPlatformService
     Initialized?.Invoke(true);
 
     string name = SteamFriends.GetPersonaName();
+    Console.WriteLine("Steam initialized with persona name: " + name);
     PersonaNameReceived?.Invoke(name);
   }
 
